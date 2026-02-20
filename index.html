@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructional Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Crimson Pro"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              sage: {
+                50: '#f4f7f4',
+                100: '#e6ede6',
+                200: '#ceddce',
+                300: '#a8c0a8',
+                400: '#86a386',
+                500: '#678667',
+                600: '#516b51',
+              },
+              warm: {
+                50: '#faf9f6',
+                100: '#f5f3ef',
+                200: '#e9e4db',
+                300: '#d7cec1',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .float { animation: float 6s ease-in-out infinite; }
+      .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+      .reveal.active { opacity: 1; transform: translateY(0); }
+      
+      /* Horizontal Scroll Styles */
+      .horizontal-scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      .horizontal-scroll-item {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Journey cards: 1 on mobile, 2 on tablet, 3 on desktop */
+      .journey-card {
+        width: calc(100% - 0rem);
+        min-width: 280px;
+      }
+      @media (min-width: 768px) {
+        .journey-card {
+          width: calc((100% - 2rem) / 2);
+        }
+      }
+      @media (min-width: 1024px) {
+        .journey-card {
+          width: calc((100% - 4rem) / 3);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-warm-50 text-stone-800 font-sans selection:bg-sage-200 overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
