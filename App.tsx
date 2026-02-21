@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import ChatBot from './components/ChatBot';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -59,6 +60,8 @@ const App: React.FC = () => {
       {selectedProject && (
         <div className="fixed inset-0 bg-white/20 backdrop-blur-sm z-[90]"></div>
       )}
+
+      <ChatBot />
     </div>
   );
 };
