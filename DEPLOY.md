@@ -34,6 +34,25 @@ git push -u origin main
   2. 删除 `vite.config.ts` 中的 `base` 配置，或改为 `base: '/'`
   3. 在 `.github/workflows/deploy.yml` 的 Build 步骤中删除 `env: GITHUB_PAGES_BASE` 那一行
 
+## AI Chatbot 配置（可选）
+
+网站右下角有一个 AI 助手，可回答关于作品集的问题。
+
+1. **本地开发**：在项目根目录创建 `.env.local`，添加：
+   ```
+   VITE_GEMINI_API_KEY=你的_Gemini_API_Key
+   ```
+   API Key 可在 [Google AI Studio](https://aistudio.google.com/apikey) 免费获取。
+
+2. **生产部署**：若需在 GitHub Pages 上启用 chatbot：
+   - 仓库 → **Settings** → **Secrets and variables** → **Actions**
+   - 新建 secret：名称为 `GEMINI_API_KEY`，值为你的 API Key
+   - 重新推送触发部署后，chatbot 会在线上生效
+
+3. **注意**：API Key 会在构建时嵌入前端代码。建议使用有用量限制的 Key，或仅在需要时启用。
+
+---
+
 ## 更新内容
 
 修改代码后执行：
