@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
 
         <div className="flex justify-center space-x-12 pt-16 text-stone-400 font-medium tracking-widest text-xs uppercase">
           <a href="https://www.linkedin.com/in/xixi-tian/" target="_blank" rel="noopener noreferrer" className="hover:text-sage-600 transition-colors">LinkedIn</a>
-          <a href="https://drive.google.com/file/d/1I2Ye2qXUsG8LcOFCQQdSo4nDqKiGqbzQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-sage-600 transition-colors">Resume PDF</a>
+          <a href="https://drive.google.com/file/d/1XFJD4-v0732tEne8lYNFB7CuHZDmGd6F/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-sage-600 transition-colors">Resume PDF</a>
         </div>
 
         <div className="pt-24 opacity-40 flex flex-col items-center">
