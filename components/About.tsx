@@ -17,7 +17,7 @@ const About: React.FC = () => {
                 I used to teach English and IELTS, then led curriculum design at an education company. When I moved to the U.S., the pandemic made me rethink how people learn. I went back to school at NYU Steinhardt for learning design and now work at We Independent, where I build things like volunteer onboarding, entrepreneurship courses for women, and guides for dependent visa holders.
               </p>
               <p>
-                I care about learners who don't always get good support: caregivers, first-year students, faculty trying to use AI, volunteers, women starting businesses. I try to make things simple, useful, and accessible so more people can actually use them.
+                I care about learners who don't always get good support: caregivers, first-year students, faculty adapting to AI, volunteers, women starting businesses. I try to make things simple, useful, and accessible so more people can actually use them.
               </p>
               <p className="font-serif italic text-2xl text-stone-800">
                 I craft learning experiences that matter.
