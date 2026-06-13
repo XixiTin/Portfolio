@@ -38,9 +38,9 @@ const MILESTONES = [
     color: 'bg-sage-200'
   },
   {
-    year: '2025–Now',
+    year: '2025–2026',
     title: 'Instructional Designer in Practice',
-    description: 'Joined We Independent as Learning Designer, leading multiple workstreams including Start & Grow, Volunteer Orientation, and Onboarding Manual for DVHs. Deepened understanding of accessibility and inclusive design in real-world contexts.',
+    description: 'Joined We Independent as Learning Designer, leading multiple workstreams including Online Course Design and Development, Volunteer Orientation, Onboarding Manual for DVHs. Deepened understanding of accessibility and inclusive design in real-world contexts.',
     icon: '🌱',
     color: 'bg-stone-900 text-white'
   }
